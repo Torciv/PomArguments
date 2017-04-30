@@ -1,0 +1,29 @@
+public class Main extends JavaPlugin{
+    
+    private static Main instance;
+    
+    public Main(){
+        instance = this;
+    }
+
+    @Override
+    public void onEnable(){
+        
+        ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
+        console.sendMessage(ChatColor.AQUA + "[Tutorial] El plugin Tutorial ha sido " + ChatColor.GREEN + "ACTIVADO");
+        
+    }
+    
+    @Override
+    public void onDisable(){
+        
+        ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
+        console.sendMessage(ChatColor.AQUA + "[Tutorial] El plugin Tutorial ha sido " + ChatColor.RED + "DESACTIVADO");    
+    }
+    
+
+    public Main getInstance(){
+        return instance;
+    }
+
+}
