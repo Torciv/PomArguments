@@ -1,0 +1,5 @@
+name: Tutorial
+author: Torciv
+version: ${project.version}
+main: com.torciv.tutorial.Main
+description: Este plugin es un tutorial.
